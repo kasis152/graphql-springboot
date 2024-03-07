@@ -1,0 +1,25 @@
+#scalar Long
+#
+#type Author {
+#	id: ID!
+#	name: String!
+#	age: Int
+#}
+
+type Student{
+	rno: Int
+	name: String
+	address: String
+}
+
+# Root
+type Query {
+	getAllStudents: [Student]
+#	findAllAuthors: [Author]!
+#	countAuthors: Long!
+}
+
+## Root
+#type Mutation {
+#	createAuthor(name: String!, age: Int): Author!
+#}
